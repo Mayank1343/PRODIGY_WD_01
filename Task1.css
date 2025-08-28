@@ -1,0 +1,113 @@
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 2000px;
+      width: 100%;
+    }
+
+nav {
+     /* border: 2px solid red; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      padding: 15px 0px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
+          background: #222;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+
+nav a {
+      /* border: 2px solid red; */
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 8px 15px;
+      transition: color 0.3s, background 0.3s;
+      border-radius: 5px;
+    }
+
+   
+nav a:hover {
+      background: white;
+      color: black;
+    }
+
+
+header {
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+#about{
+    text-align: center;
+}
+
+#about h1{
+  /*  border: 2px solid red; */
+font-size: 2.5em;
+}
+
+#about h6{
+    font-size: 1.2rem;
+    padding: 0% 10%;
+    font-weight: 600;
+}
+#about h5{
+    font-size: 1.5rem;
+    padding: 0% 10%;
+    font-weight: 500;
+    font-style:italic;
+}
+
+
+
+#services h1{
+  /*  border: 2px solid red; */
+font-size: 2.5em;
+margin-top: 5%;
+text-align: center;
+}
+
+#services ul{
+    font-size: 1.5rem;
+    margin-left: 20%;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact h1{
+  /*  border: 2px solid red; */
+font-size: 2.5em;
+}
+
+#contact a img{
+width: 3.5%;
+height: auto;
+justify-content: space-around;
+transition: all ease-in 0.1s;
+}
+
+#contact a img:hover{
+ transform: scale(1.1);
+}
+
+section{
+    margin: 11% 0%;
+}
