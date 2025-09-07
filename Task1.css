@@ -16,13 +16,33 @@ nav {
       display: flex;
       justify-content: center;
       gap: 20px;
-      transition: background 0.3s ease, box-shadow 0.3s ease;
       z-index: 1000;
           background: linear-gradient(135deg, #667eea, #764ba2);
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
     }
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav.scrolled {
+  background: linear-gradient(135deg, #667eea, #764ba2, #667eea, #764ba2);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
 
 
 nav a {
